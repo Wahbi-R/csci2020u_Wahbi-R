@@ -1,0 +1,8 @@
+plugins {
+	id 'java'
+    id 'application'
+}
+
+application {
+    mainClassName = 'csci2020u.lab02.SimpleTest'
+}
