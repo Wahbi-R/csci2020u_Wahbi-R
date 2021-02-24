@@ -1,0 +1,85 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center"
+          hgap="10" vgap="10">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <columnConstraints>
+        <ColumnConstraints minWidth="0" prefWidth="100"
+                           maxWidth="Infinity" halignment="LEFT">
+        </ColumnConstraints>
+        <ColumnConstraints minWidth="200" prefWidth="200"
+                           maxWidth="Infinity" hgrow="ALWAYS">
+        </ColumnConstraints>
+    </columnConstraints>
+
+    <!-- Username Label -->
+    <Label text="Username:" GridPane.columnIndex="0"
+           GridPane.rowIndex="1" >
+    </Label>
+    <!-- Username Text Field -->
+    <TextField fx:id="usernameField" prefHeight="20"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <!-- Password Label -->
+    <Label text="Password:" GridPane.columnIndex="0"
+           GridPane.rowIndex="2" >
+    </Label>
+    <!-- Password Text Field -->
+    <TextField fx:id="passwordField" prefHeight="20"
+               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <!-- Full Name Label -->
+    <Label text="Full Name:" GridPane.columnIndex="0"
+           GridPane.rowIndex="3" >
+    </Label>
+    <!-- Full Name Field -->
+    <TextField fx:id="fullNameField" prefHeight="20"
+               GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <!-- E-Mail Label -->
+    <Label text="E-Mail:" GridPane.columnIndex="0"
+           GridPane.rowIndex="4" >
+    </Label>
+    <!-- E-Mail Field -->
+    <TextField fx:id="emailField" prefHeight="20"
+               GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <!-- Phone Number Label -->
+    <Label text="Phone #:" GridPane.columnIndex="0"
+           GridPane.rowIndex="5" >
+    </Label>
+
+    <!-- Phone Number Field -->
+    <TextField fx:id="phoneField" prefHeight="20"
+               GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <!-- Date of Birth Label -->
+    <Label text="Date of Birth: " GridPane.columnIndex="0"
+           GridPane.rowIndex="6" >
+    </Label>
+
+    <!-- Date of Birth Picker -->
+    <DatePicker fx:id="dateField" prefHeight="20"
+                GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+
+    <!-- Register Button -->
+    <Button fx:id="registerButton" text="Register"
+            prefWidth="100" prefHeight="20" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="7"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="LEFT"
+            onAction="#registerAction">
+        <GridPane.margin>
+            <Insets top="20" right="0" bottom="20" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+
+</GridPane>
