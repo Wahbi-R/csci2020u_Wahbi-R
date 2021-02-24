@@ -5,6 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
 
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center"
@@ -32,7 +33,7 @@
            GridPane.rowIndex="2" >
     </Label>
     <!-- Password Text Field -->
-    <TextField fx:id="passwordField" prefHeight="20"
+    <PasswordField fx:id="passwordField" prefHeight="20"
                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
     <!-- Full Name Label -->
