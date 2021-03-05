@@ -1,0 +1,47 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TableView fx:id="tabView" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+               AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+        <columns>
+            <!-- Student ID -->
+            <TableColumn text="SID">
+                <cellValueFactory><PropertyValueFactory property="studentId" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Assignment Mark -->
+            <TableColumn text="Assignments">
+                <cellValueFactory><PropertyValueFactory property="assignmentGrade" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Midterm Column -->
+            <TableColumn text="Midterm">
+                <cellValueFactory><PropertyValueFactory property="midtermGrade" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Final Exam Column -->
+            <TableColumn text="Final Exam">
+                <cellValueFactory><PropertyValueFactory property="finalExam" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Final Mark Column -->
+            <TableColumn text="Final Mark">
+                <cellValueFactory><PropertyValueFactory property="finalMark" />
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Letter Grade Column -->
+            <TableColumn text="Letter Grade">
+                <cellValueFactory><PropertyValueFactory property="letterGrade" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</GridPane>
